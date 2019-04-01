@@ -1,9 +1,16 @@
+## target linux
+* Linux 4.4.177
+* Ubuntu 18.04.1 LTS (Bionic Beaver)
+
+
 ## add file
 * arch/x86/kernel/regist_sandbox.c
+	* [here](https://github.com/epcnt19/sandbox/blob/master/arch/x86/kernel/regist_sandbox.c)
 
 
 ## modify file
 * arch/x86/kernel/Makefile
+	* [here](https://github.com/epcnt19/sandbox/blob/master/arch/x86/kernel/Makefile)
 
 ```
 $ diff ./arch/x86/kernel/Makefile /tmp/linux-4.4.177/arch/x86/kernel/Makefile 
@@ -15,6 +22,7 @@ $ diff ./arch/x86/kernel/Makefile /tmp/linux-4.4.177/arch/x86/kernel/Makefile
 ```
 
 * arch/x86/entry/syscalls/syscall_64.tbl
+	* [here](https://github.com/epcnt19/sandbox/blob/master/arch/x86/entry/syscalls/syscall_64.tbl)
 
 ```
 $ diff ./arch/x86/entry/syscalls/syscall_64.tbl /tmp/linux-4.4.177/arch/x86/entry/syscalls/syscall_64.tbl 
@@ -29,6 +37,7 @@ $ diff ./arch/x86/entry/syscalls/syscall_64.tbl /tmp/linux-4.4.177/arch/x86/entr
 ```
 
 * arch/x86/entry/entry_64.S
+	* [here](https://github.com/epcnt19/sandbox/blob/master/arch/x86/entry/entry_64.S)
 
 ```
 $ diff ./arch/x86/entry/entry_64.S /tmp/linux-4.4.177/arch/x86/entry/entry_64.S 
